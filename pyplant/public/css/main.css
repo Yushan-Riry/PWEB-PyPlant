@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+:root {
+    --main-color: #017143;
+    --second-color: #1e3932;
+}
+
+.beranda{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 10%;
+    transition: 0.2s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+} */
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox p{
+    color: #333;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 680px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 340px;
+}
+
+.tigabawah{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tigabawah li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tigabawah li:hover{
+    transform: translateY(-15px);
+}
+
+.tigabawah li img{
+    max-width: 60px;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.heading h1{
+    font-size: 2rem;
+}
+
+.tentang{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.mobile{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.container-tentang, 
+.container-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tentang-img, 
+.mobile-img{
+    flex: 1 1 21rem;
+}
+
+.tentang-text, 
+.mobile-text{
+    flex: 1 1 21rem;
+}
+
+.tentang-text h2, .mobile-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+.tentang-text p, .mobile-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.kontak{
+    display: flex;
+    flex-wrap: wrap;
+    background: #017143;
+    gap: 1.5rem;
+}
+
+.kontak-img{
+    flex: 1 1 17rem;
+    margin-left: 100px;
+}
+
+.kontak-text{
+    flex: 1 1 17rem;
+}
+
+.kontak-text h2{
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.kontak-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.tentang-img img{
+    width: 600px;
+    height: 400px;
+}
+
+.mobile-img img{
+    margin-left: 170px;
+    height: 500px;
+    width: 275px;
+}
+
+.mobile-text{
+    margin-left: 40px;
+}
+
+.mobile-text a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}

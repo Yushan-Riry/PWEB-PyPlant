@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+:root {
+    --main-color: #017143;
+    --second-color: #1e3932;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 10%;
+    transition: 0.2s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+} */
+
+.tentang {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-top: 80px;
+}
+
+.mobile {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    top: 0; /* Menetapkan posisi ke atas */
+}
+
+.container-tentang, 
+.container-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tentang-img, 
+.mobile-img{
+    flex: 1 1 21rem;
+}
+
+.tentang-text, 
+.mobile-text{
+    flex: 1 1 21rem;
+}
+
+.tentang-text h2, .mobile-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+.tentang-text p, .mobile-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.tentang .heading{
+    text-align: center;
+}
+
+.tentang-img img{
+    width: 600px;
+    height: 400px;
+}
+
+.mobile-img img{
+    margin-left: 170px;
+    height: 500px;
+    width: 275px;
+}
+
+.mobile-img2 img{
+    margin-right: 180px;
+    height: 500px;
+    width: 275px;
+}
+
+.mobile-text{
+    margin-left: 90px;
+}
+
+.tentang-text{
+    margin-left: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
